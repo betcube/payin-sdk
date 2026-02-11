@@ -1,6 +1,6 @@
 {
 	"name": "@betcube/payin-sdk",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "NestJS SDK for Payin-Payout payment system Payin API",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
