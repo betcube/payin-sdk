@@ -1,4 +1,4 @@
-# betcube/payin-payout-sdk
+# @betcube/payin-payout-sdk
 
 NestJS SDK for Payin-Payout payment system (Payin API).
 
@@ -7,7 +7,7 @@ All communication is JSON-based. The SDK handles form-data encoding for outgoing
 ## Installation
 
 ```bash
-npm install betcube/payin-payout-sdk
+npm install @betcube/payin-payout-sdk
 ```
 
 **Peer dependencies** (come with any NestJS project):
@@ -27,7 +27,7 @@ npm install betcube/payin-payout-sdk
 
 ```typescript
 import { Module } from '@nestjs/common'
-import { PayinModule } from 'betcube/payin-payout-sdk'
+import { PayinModule } from '@betcube/payin-payout-sdk'
 
 @Module({
 	imports: [
@@ -46,7 +46,7 @@ export class AppModule {}
 ```typescript
 import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
-import { PayinModule } from 'betcube/payin-payout-sdk'
+import { PayinModule } from '@betcube/payin-payout-sdk'
 
 @Module({
 	imports: [
@@ -69,7 +69,7 @@ export class AppModule {}
 
 ```typescript
 import { Injectable } from '@nestjs/common'
-import { PayinService } from 'betcube/payin-payout-sdk'
+import { PayinService } from '@betcube/payin-payout-sdk'
 
 @Injectable()
 export class PaymentService {
@@ -294,7 +294,7 @@ import {
 	PayinWebhook,
 	PaymentNotification,
 	PaymentStatus,
-} from 'betcube/payin-payout-sdk'
+} from '@betcube/payin-payout-sdk'
 
 @Controller('webhooks')
 export class WebhooksController {
@@ -355,7 +355,7 @@ import {
 	PaymentPreference,
 	Currency,
 	P2PType,
-} from 'betcube/payin-payout-sdk'
+} from '@betcube/payin-payout-sdk'
 
 PaymentStatus.SUCCESS // 1
 PaymentStatus.ERROR // 2
@@ -383,7 +383,7 @@ import {
   PayinApiError,     // API returned error (non-2xx or status:false)
   PayinNetworkError, // network/timeout
   PayinSignatureError, // signature mismatch
-} from 'betcube/payin-payout-sdk';
+} from '@betcube/payin-payout-sdk';
 
 try {
   await this.payin.createP2PInvoice({ ... });
